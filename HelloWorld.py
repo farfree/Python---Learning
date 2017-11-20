@@ -1,47 +1,37 @@
-print ("Hello World")
-name = "I am farfree"
-farmList = [4, 5, 7, 9, 0xff]
-print (farmList)
+print ("Basic Concept\n")
+str1 = "Hello World.\n"
+str2 = "I am farfree\n"
+print (str1 * 2 + str2)
+print ("** means square. EX: 2**7 = " + str(2**7) + "\n")
 
-class person:
-    def __init__ (self, name, age):
-        self.name = name
-        self.age = age
-    def __str__ (self):
-        return "Name: " + self.name + " Age: " + str(self.age)
-    def showName(self):
-        print (self.name + " Hello");
+print ("\nBoolean")
+print ("2 > 3 is " + str(2>3))
+print ("2 > 3 is " + str(2<3))
 
-alex = person('Alex', 18);
-alex.showName()
+print ("\nFollowing is List")
+list1 = [4, 5, 7, 9, 0xff]
+print ("List = " + str(list1) + ", Length = " + str(len(list1)))
+print ("List[0] = List[-4] = " + str(list1[-4]))
+print ("List[4] = List[-1] = " + str(list1[-1]))
 
-bob = person('Bob', 30);
-bob.showName()
+list1[2] = 10
+print ("Modify list1[2] to 10 = " + str(list1[2]))
 
-print (alex)
-print (bobprint (alex))
+print ("\nFollowing is Dictionary")
+dict1 = {"name":"Alex", "age":18, "City":"LA"}
+print ("Dict = " + str(dict1) + ", Length = " + str(len(dict1)))
+print ("dict1[\"name\"] = " + str(dict1["name"]))
 
-personList = [
-				{"name": "Alex", "age":18, "city":"Hisnchu" },
-				{"name": "Bob", "age":28, "city":"TT" },
-				{"name": "Cat", "age":38, "city":"ZZ" },
-				{"name": "Dog", "age":48, "city":"WW" },
-			]
-
-#print (personList[0]["name"])
-personList[0]["name"] = "NEWNEW"
-#print (personList[0]["name"])
-del personList[0]["name"]
-#print (personList)
+dict1["phone"] = 123
+print ("Add phone key to dict dict1[\"phone\"] = " + str(dict1["phone"]))
+del dict1["age"]
+print ("Del age key by \"del dict1[\"age\"]\"")
+print (dict1)
 
 if 1 > 2:
-    print ("SS")
+    print ("if 1 > 2:")
 elif 3 > 2:
-    print ("AA")
+    print ("elif 3 > 2:")
 else:
-    print ("BB")
+    print ("else:")
 
-def test(a, b):
-    return a+b
-
-test(3,5)
