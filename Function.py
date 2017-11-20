@@ -1,4 +1,11 @@
-"""
+
+#define function
+def sayHi(msg):
+    print ("Hello " + msg)
+
+sayHi ("this is sayhi function")
+
+#define class
 class person:
     def __init__ (self, name, age):
         self.name = name
@@ -9,28 +16,10 @@ class person:
         print (self.name + " Hello");
 
 alex = person('Alex', 18);
-alex.showName()
-
 bob = person('Bob', 30);
-bob.showName()
 
 print (alex)
+alex.showName()
+print (bob)
+bob.showName()
 
-personList = [
-                {"name": "Alex", "age":18, "city":"Hisnchu" },
-                {"name": "Bob", "age":28, "city":"TT" },
-                {"name": "Cat", "age":38, "city":"ZZ" },
-                {"name": "Dog", "age":48, "city":"WW" },
-            ]
-
-#print (personList[0]["name"])
-personList[0]["name"] = "NEWNEW"
-#print (personList[0]["name"])
-del personList[0]["name"]
-#print (personList)
-
-def test(a, b):
-    return a+b
-
-test(3,5)
-"""
