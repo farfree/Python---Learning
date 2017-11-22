@@ -12,6 +12,7 @@ print (type(1111111111111111111111111111))
 print (type(3.14))
 print (type(True))
 print (type(3 + 4j))
+print (3 + 4j)
 print (type( 2** 100))
 
 print (10 / 3)
@@ -44,5 +45,3 @@ print (str1[::-2])
 import sys
 print (sys.platform)
 print ('My platform is {pc.platform}'.format(pc = sys))
-
-print ("\nContainer\n")
