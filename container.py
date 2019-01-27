@@ -1,3 +1,5 @@
+# -*- coding: UTF-8 -*-
+
 print ("\nContainer\n")
 
 #list 是有序且可變群集（Collection）
